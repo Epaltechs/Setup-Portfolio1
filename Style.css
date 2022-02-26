@@ -21,6 +21,10 @@ li {
   list-style: none;
 }
 
+.descriptionTxt {
+  padding: 20px 0;
+}
+
 a {
   font-weight: 500;
   font-size: 15px;
@@ -31,7 +35,7 @@ a {
 
 .navbar {
   width: 100%;
-  height: 70px;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,8 +44,6 @@ a {
   position: fixed;
   top: 0;
   z-index: 10000;
-  margin-top: 3rem;
-  margin-bottom: 2em;
 }
 
 .nav-items {
@@ -56,11 +58,11 @@ a {
   padding: 15px;
   font-size: 16px;
   line-height: 34px;
-  color: blue;
+  color: #fff;
 }
 
 .nav-items li a:hover {
-  color: rgb(152, 32, 168);
+  color: blue;
 }
 
 .navbar .openMenu {
@@ -68,21 +70,22 @@ a {
   margin: 10px;
   font-weight: 100;
   color: #7f8cff;
-  display: block;
+  display: none;
   cursor: pointer;
 }
 
 .nav-items .closeMenu {
   font-size: 2rem;
-  color: rgb(64, 47, 209);
+  color: white;
   margin: -10px 3px;
   display: none;
   cursor: pointer;
 }
 
 .navbar #logo img {
-  width: 60px;
+  width: 50px;
   margin: auto;
+  padding-top: 2em;
 }
 
 #index {
@@ -91,7 +94,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   height: 140vh;
-  position: relative;
 }
 
 #index #container-def {
@@ -209,7 +211,6 @@ a {
 #works-container .container .work-description .languages {
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
   list-style: none;
   padding-right: 4px;
 }
@@ -253,7 +254,7 @@ a {
   padding-right: 4px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .nav-items {
     position: fixed;
     height: 100vh;
@@ -264,10 +265,10 @@ a {
     padding: 100px 0;
     flex-direction: column;
     justify-content: start;
-    align-items: flex-end;
+    align-items: flex-start;
     background-color: rgb(13 35 235 / 77.4%);
     transition: right 0.3s ease;
-    display: flex;
+    display: none;
     z-index: 10;
     backdrop-filter: blur(10px);
   }
@@ -298,15 +299,15 @@ a {
   }
 
   .ruby {
-    display: flex;
+    display: none;
   }
 
   #works-container .container .work-pic:nth-child(2) {
-    display: flex;
+    display: none;
   }
 
   .work-pic-1 {
-    display: flex;
+    display: none;
   }
 
   #index {
@@ -342,7 +343,7 @@ a {
   margin-bottom: 50px;
   padding: 100px 20px;
   background-image: url(./images/desktop-images/about-desk.png);
-  background-size: 100vh;
+  background-size: 100vw;
   background-repeat: no-repeat;
 }
 
@@ -384,7 +385,6 @@ a {
   box-sizing: border-box;
   border-radius: 8px;
   margin-top: 30px;
-  padding-right: 4px;
 }
 
 .get-it-btn:hover {
@@ -438,7 +438,6 @@ a {
 
 .box-languages {
   width: 90%;
-  height: 40px;
   padding: 10px;
   margin: 40px auto -30px;
   background: #f7f7f9;
@@ -486,8 +485,8 @@ a {
   background-repeat: no-repeat;
   z-index: 2;
   margin: -120px auto;
-  padding: 100px 20px 0;
-  height: 112vh;
+  padding: 240px 20px 0;
+  height: auto;
 }
 
 #description-contact-box {
@@ -550,9 +549,9 @@ a {
 
 #contact-container #input-contact-box .input-m {
   font-family: "Poppins", sans-serif;
-  padding: 5px 5px 0;
+  padding: 15px 16px;
   font-size: 15px;
-  line-height: 14px;
+  line-height: 24px;
   color: #797878;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -570,6 +569,7 @@ a {
   height: 58px;
   left: 24px;
   margin-top: 20px;
+  margin-bottom: 40px;
   background: #fff;
   border-radius: 8px;
   border: none;
@@ -624,7 +624,7 @@ a {
 
   .navbar ul li a {
     visibility: visible;
-    color: blue;
+    color: #344563;
   }
 
   #logo {
@@ -695,12 +695,10 @@ a {
   #works-container .container .work-pic,
   .work-pic-1 {
     width: 95%;
-    margin-top: -50px;
   }
 
   #works-container .container .work-pic-1 {
     margin-left: 30px;
-    margin-top: -50px;
   }
 
   #works-container .container .work-pic:nth-child(1) {
@@ -710,7 +708,6 @@ a {
   #works-container .container .work-description {
     width: 80%;
     height: auto;
-    margin-top: -50px;
   }
 
   #works-container .container .work-description .description-element {
@@ -740,12 +737,10 @@ a {
 
   #works-container .container .work-description #languages-1 {
     width: 45%;
-    padding-right: 4px;
   }
 
   #works-container .container .work-description .languages {
     width: 73%;
-    padding-right: 4px;
   }
 
   #works-container .container .work-description .languages .ruby {
@@ -758,19 +753,17 @@ a {
     border-radius: 8px;
     color: #6070ff;
     background: rgb(235 235 255);
-    padding-right: 4px;
   }
 
   #about-container {
     padding: 90px 150px 150px;
     background-image: url(./images/desktop-images/about-desk.png);
     background-size: 100%;
-    margin-top: -100px;
   }
 
   #about-container .about-content-box {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 10px;
     height: auto;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -818,7 +811,7 @@ a {
 
   #contact-container {
     background-image: url(./images/desktop-images/contact-desk.png);
-    margin: -200px auto;
+    margin: -140px auto;
   }
 
   #contact-items {
@@ -826,7 +819,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
   }
 
   #description-contact-box {
@@ -835,7 +827,7 @@ a {
 
   #contact-container #input-contact-box {
     width: 40%;
-    margin-top: -4rem;
+    margin: auto;
   }
 
   #contact-container .get-touch-btn {
