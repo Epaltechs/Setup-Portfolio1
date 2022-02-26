@@ -654,6 +654,13 @@ a {
   #index #container-def h1 {
     margin-top: 0;
     line-height: 60px;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    from { color: blue; }
+    to { color: red; }
   }
 
   #index #container-def p {
