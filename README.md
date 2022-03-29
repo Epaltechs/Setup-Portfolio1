@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 ​
 :bust_in_silhouette: **Author**
 - Emmnanuel Paul
-- GitHub: [epaltechs.github.io/Setup-Portfolio]
+- GitHub: [epaltechs.github.io/Setup-Portfolio1]
 - LinkedIn: [https://www.linkedin.com/in/emmanuel-paul-a2bab7b4/]
 = Twitter: [http://twitter.com/@emmapaul247].
 ​
