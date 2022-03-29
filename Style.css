@@ -21,6 +21,10 @@ li {
   list-style: none;
 }
 
+.descriptionTxt {
+  padding: 20px 0;
+}
+
 a {
   font-weight: 500;
   font-size: 15px;
@@ -36,7 +40,6 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 0.2px 50px #396df2;
   padding: 0 24px;
   position: fixed;
   top: 0;
@@ -80,16 +83,17 @@ a {
 }
 
 .navbar #logo img {
-  width: 30px;
+  width: 50px;
   margin: auto;
+  padding-top: 2em;
 }
 
 #index {
   top: 0;
-  background-image: url(./images/mbTemplate.png);
+  background-image: url(./images/desktop-images/deskBackground-Home.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 110vh;
+  height: 140vh;
 }
 
 #index #container-def {
@@ -201,13 +205,14 @@ a {
   font-size: 15px;
   line-height: 24px;
   color: rgb(52 69 99 / 100%);
+  padding: 30px 0;
 }
 
 #works-container .container .work-description .languages {
   width: 80%;
   display: flex;
-  justify-content: space-between;
   list-style: none;
+  padding-right: 4px;
 }
 
 #works-container .container .work-description .languages .lang {
@@ -220,6 +225,7 @@ a {
   border-radius: 8px;
   color: #6070ff;
   background: #ebebff;
+  padding-right: 4px;
 }
 
 #works-container .container .work-description .languages .lang1 {
@@ -232,6 +238,7 @@ a {
   border-radius: 8px;
   color: #6070ff;
   background: #ebebff;
+  padding-right: 4px;
 }
 
 #works-container .container .work-description .languages .lang2 {
@@ -244,13 +251,16 @@ a {
   border-radius: 8px;
   color: #6070ff;
   background: #ebebff;
+  padding-right: 4px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .nav-items {
     position: fixed;
     height: 100vh;
     width: 100%;
+    right: 0;
+    top: 0;
     font-size: 35px;
     padding: 100px 0;
     flex-direction: column;
@@ -329,10 +339,11 @@ a {
 
 #about-container {
   height: auto;
-  margin-top: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 100px 20px;
-  background-image: url(./images/about-background-mobile.png);
-  background-size: 100%;
+  background-image: url(./images/desktop-images/about-desk.png);
+  background-size: 100vw;
   background-repeat: no-repeat;
 }
 
@@ -341,6 +352,7 @@ a {
   height: auto;
   display: flex;
   flex-direction: column;
+  padding-top: 2em;
 }
 
 #about-container .about-content-box .about-title {
@@ -349,6 +361,7 @@ a {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  margin-top: 50px;
 }
 
 #about-container .about-content-box .about-description {
@@ -420,12 +433,11 @@ a {
 }
 
 #languages-slider-3 {
-  margin-bottom: 120px;
+  margin-bottom: 30px;
 }
 
 .box-languages {
   width: 90%;
-  height: 40px;
   padding: 10px;
   margin: 40px auto -30px;
   background: #f7f7f9;
@@ -452,12 +464,11 @@ a {
 }
 
 #about-container .about-content-box .icon-content-element {
-  width: 40%;
+  width: 50%;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: transform 0.05s ease-out;
 }
 
 #about-container .about-content-box .icon-content-element li {
@@ -469,19 +480,19 @@ a {
 }
 
 #contact-container {
-  background-image: url(./images/contact_backward.png);
+  background-image: url(./images/desktop-images/contact-desk.png);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 2;
   margin: -120px auto;
-  padding: 100px 20px 0;
-  height: 112vh;
+  padding: 240px 20px 0;
+  height: auto;
 }
 
 #description-contact-box {
   width: 90%;
   margin: auto;
-  height: 200px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -504,18 +515,13 @@ a {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   user-select: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-#description-contact-box .contact-description-1:hover {
-  transform: translateX(10px);
 }
 
 #contact-container #input-contact-box {
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -543,10 +549,10 @@ a {
 
 #contact-container #input-contact-box .input-m {
   font-family: "Poppins", sans-serif;
-  padding: 5px 5px 0;
+  padding: 15px 16px;
   font-size: 15px;
   line-height: 24px;
-  color: #787879;
+  color: #797878;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   outline: none;
@@ -563,6 +569,7 @@ a {
   height: 58px;
   left: 24px;
   margin-top: 20px;
+  margin-bottom: 40px;
   background: #fff;
   border-radius: 8px;
   border: none;
@@ -762,9 +769,13 @@ a {
     grid-template-columns: 40% 60%;
   }
 
+  .descriptionTxt {
+    padding: 30px 0;
+  }
+
   #about-container .about-content-box #about-inside-left-box {
     width: 100%;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -790,10 +801,37 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
+    gap: 15px;
   }
 
   .box-languages .icon-1 {
     width: 40px;
     margin: 0;
+  }
+
+  #contact-container {
+    background-image: url(./images/desktop-images/contact-desk.png);
+    margin: -140px auto;
+  }
+
+  #contact-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #description-contact-box {
+    width: 40%;
+  }
+
+  #contact-container #input-contact-box {
+    width: 40%;
+    margin: auto;
+  }
+
+  #contact-container .get-touch-btn {
+    margin-bottom: 20px;
+    align-self: center;
   }
 }
